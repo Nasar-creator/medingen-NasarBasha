@@ -1,0 +1,121 @@
+# === Node.js ===
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+yarn.lock
+.pnpm-debug.log
+
+# === Python ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.p~  
+*.egg
+*.egg-info/
+dist/
+build/
+develop-eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.manifest
+*.spec
+pip-log.txt
+pip-delete-this-directory.txt
+
+# === Virtual Environment ===
+venv/
+env/
+ENV/
+.venv/
+.pyenv/
+.idea/
+
+# === Environment Variables ===
+.env
+.env.*
+*.env
+
+# === Logs and Test Output ===
+*.log
+logs/
+*.pid
+*.seed
+*.pid.lock
+test-output/
+test-results/
+.coverage
+coverage/
+htmlcov/
+.tox/
+.nox/
+.cache/
+pytest_cache/
+.pytest_cache/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# === Frontend Build ===
+build/
+dist/
+out/
+.next/
+.cache/
+.tmp/
+temp/
+.cypress/
+cypress/screenshots/
+cypress/videos/
+
+# === Editor / IDE Files ===
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# === OS Specific ===
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+Desktop.ini
+
+# === System Files ===
+*.bak
+*.tmp
+*.swp
+*.orig
+*.rej
+*.log.*
+
+# === Git ===
+.gitattributes
+# .gitignore
+
+# === Deployment ===
+.vercel/
+.netlify/
+firebase-debug.log
+firebase-debug.*
+*.rdb         # Redis DB file
+dump/         # MongoDB dump
+
+# === Docker (if used) ===
+*.pid
+docker-compose.override.yml
+docker-compose.local.yml
+*.tar
+*.sqlite3
+
+# === Jupyter Notebooks (if used) ===
+.ipynb_checkpoints/
