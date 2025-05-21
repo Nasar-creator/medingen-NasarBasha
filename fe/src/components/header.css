@@ -1,0 +1,141 @@
+.header_main_div {
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3vw;
+    height: 8vw;
+    /* Fixed height, adjust as needed */
+    box-sizing: border-box;
+}
+
+.header_inner_first_div {
+    width: 12%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 0;
+}
+
+.logo {
+    width: 100%;
+    height: auto;
+    max-height: 6vw;
+    /* keep logo height consistent */
+    object-fit: contain;
+}
+
+.header_inner_second_div {
+    /* background-color: bisque; */
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1vw;
+    flex-wrap: wrap;
+}
+
+.header_inner_third_div {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.third_img_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.header_inner_middle_section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+}
+
+.home_img {
+    background-color: rgba(174, 173, 173, 0.679);
+    width: 14%;
+    height: 80%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1366px) {
+    .header_main_div {
+        height: auto;
+        padding: 1.5vw 2vw;
+    }
+
+    .header_inner_first_div,
+    .header_inner_second_div,
+    .header_inner_third_div {
+        width: auto;
+    }
+
+    .header_inner_second_div {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1vw;
+    }
+
+    .third_img_div {
+        width: 5vw;
+        height: 5vw;
+    }
+
+    .home_img {
+        width: 20%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .header_main_div {
+        flex-direction: column;
+        height: auto;
+        gap: 1vw;
+    }
+
+    .header_inner_first_div,
+    .header_inner_second_div,
+    .header_inner_third_div {
+        width: 100%;
+        justify-content: center !important;
+        padding: 0;
+    }
+
+    .header_inner_second_div {
+        gap: 1.5vw;
+    }
+
+    .third_img_div {
+        width: 7vw;
+        height: 7vw;
+    }
+
+    .home_img {
+        width: 30%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .third_img_div {
+        width: 9vw;
+        height: 9vw;
+    }
+
+    .home_img {
+        width: 40%;
+    }
+}

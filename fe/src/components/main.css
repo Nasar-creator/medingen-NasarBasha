@@ -1,0 +1,433 @@
+.medicinedetails_main_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+    max-width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.top_para {
+    display: flex;
+    width: 90vw;
+    height: 2.5vw;
+    align-items: center;
+    margin: 40px auto;
+    max-width: 1366px;
+}
+
+.medicinedetails_dialogbox {
+    display: flex;
+    justify-content: space-between;
+    width: 90vw;
+    max-width: 1366px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    /* allow wrapping on smaller screens */
+}
+
+.medicinedetails_left_dialogbox {
+    width: 55%;
+    min-width: 300px;
+    /* minimum width to avoid too narrow */
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    /* space for wrap */
+}
+
+.medicinedetails_left_dialogbox_top_head {
+    background-color: rgb(242 250 245);
+    border-radius: 10px;
+    font-size: 1vw;
+    padding: 0.8vw;
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.left_dialogbox_inner_top_div {
+    border-radius: 10px;
+    background-color: rgb(242 250 245);
+    display: flex;
+    flex-direction: column;
+}
+
+.left_dialogbox_inner_div {
+    width: 90%;
+    padding: 4%;
+    box-sizing: border-box;
+}
+
+/* Alter */
+.alter_most_outer_div {
+    height: 50vw;
+    max-height: 800px;
+}
+
+.alter_outer_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 50%;
+}
+
+.alter_inner_div {
+    width: 95%;
+    height: 12%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgb(242 250 245);
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.alter_inner_image {
+    width: 4vw;
+    height: 4vw;
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.original_price {
+    text-decoration: line-through;
+    font-size: 70%;
+}
+
+.discounted_price {
+    font-size: 100%;
+    font-weight: 700;
+}
+
+.discounted_para {
+    background-color: rgba(124, 255, 101, 0.737);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.alter_inner_first_div {}
+
+.alter_inner_second_div {
+    line-height: 5px;
+}
+
+.alter_inner_third_div {}
+
+.alter_btn {
+    width: 5vw;
+    height: 2.3vw;
+    border: 1px solid rgb(26, 26, 26);
+    border-radius: 20px;
+    max-width: 80px;
+    max-height: 40px;
+}
+
+.price_div {
+    width: 13vw;
+    display: flex;
+    gap: 10px;
+    /* justify-content: space-between; */
+    max-width: 200px;
+}
+
+/* Disclaimer */
+.disclaimer_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    max-width: 1366px;
+    /* margin: 0 auto; */
+}
+
+.disclaimer_inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.disclaimer_heading {
+    font-weight: 800;
+    font-size: 1vw;
+    max-font-size: 16px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1366px) {
+    .medicinedetails_left_dialogbox {
+        width: 60%;
+    }
+
+    .alter_inner_div {
+        height: auto;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .alter_inner_image {
+        width: 40px;
+        height: 40px;
+    }
+
+    .alter_btn {
+        width: 70px;
+        height: 35px;
+    }
+
+    .price_div {
+        width: auto;
+    }
+}
+
+@media (max-width: 1024px) {
+    .medicinedetails_dialogbox {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .medicinedetails_left_dialogbox {
+        width: 100%;
+    }
+
+    .top_para {
+        width: 95vw;
+        height: auto;
+        font-size: 4vw;
+        margin: 20px auto;
+    }
+
+    .alter_inner_div {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+
+    .alter_inner_image {
+        width: 50px;
+        height: 50px;
+    }
+
+    .alter_btn {
+        width: 100%;
+        max-width: none;
+        height: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .top_para {
+        font-size: 5vw;
+    }
+
+    .alter_inner_image {
+        width: 30px;
+        height: 30px;
+    }
+
+    .alter_btn {
+        width: 100%;
+        height: 35px;
+    }
+}
+
+.comparison_image{
+    width: 18vw;
+    height: 16vw;
+    margin: 3vw;
+}
+.alt-container{
+    width: 100vw;
+    height: 60vw;
+}
+.alt_image_div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.alt-grid{
+    width: 100vw;
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+
+}
+.alt-card{
+    width: 22%;
+    height: 100%;
+    background-color: rgb(242 250 245);
+    border-radius: 10px;
+}
+.table_inner_content{
+    margin: 10px;
+}
+.comparison_para{
+    width: 20vw;
+}
+.brand_para{
+    font-size: 1.5vw;
+    font-weight: 400;
+    color: rgb(220, 218, 218);
+}
+.generic_label{
+    font-size: 0.8vw;
+        font-weight: 700;
+        color: rgb(86, 86, 86);
+}
+.generic_Name{
+    font-size: 0.8vw;
+}
+.actual_price_label{
+    font-size: 0.8vw;
+        font-weight: 700;
+        color: rgb(86, 86, 86);
+}
+.actual_price{
+    font-size: 0.8vw;
+        font-weight: 700;
+        color: rgb(86, 86, 86);
+}
+
+.discount_div{
+    background-color: rgb(205, 204, 204);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 3vw;
+}
+.price_para{
+    font-weight: 700;
+    font-size: 1.5vw;
+}
+
+.review_inner_div{
+    margin-left: 5vw
+
+}
+.faq_main_div{
+    display: flex;
+    flex-direction: column;
+    margin: 4vw;
+    line-height: 8px;
+    gap: 2vw;
+}
+.faq_head_div{
+    background-color: rgb(242 250 245);
+    padding: 1vw;
+    border-radius: 20px;
+}
+.faq_inner_div{
+    background-color: rgb(242 250 245);
+    padding: 2vw;
+    border-radius: 20px;
+}
+@media (max-width: 1399px) {
+    .faq_main_div {
+        margin: 3vw auto;
+        width: 95%;
+        gap: 1.5vw;
+    }
+
+    .faq_head_div {
+        padding: 1.5vw;
+        font-size: 1.4vw;
+    }
+
+    .faq_inner_div {
+        padding: 2vw;
+        font-size: 1.2vw;
+        line-height: 1.6;
+    }
+}
+
+@media (max-width: 1399px) {
+    
+    .medicinedetails_main_div {
+        max-width: 95vw;
+    }
+
+    .top_para {
+        font-size: 1.3vw;
+        height: auto;
+    }
+
+    .medicinedetails_dialogbox {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .medicinedetails_left_dialogbox {
+        width: 60%;
+    }
+
+    .medicinedetails_left_dialogbox_top_head {
+        font-size: 1.2vw;
+        padding: 1.2vw;
+    }
+
+    .alter_outer_div {
+        font-size: 0.9vw;
+    }
+
+    .alter_inner_image {
+        width: 4vw;
+        height: 4vw;
+    }
+
+    .alter_btn {
+        width: 6vw;
+        height: 2.5vw;
+    }
+
+    .price_div {
+        width: auto;
+    }
+
+    .comparison_image {
+        width: 22vw;
+        height: 18vw;
+    }
+
+    .comparison_para,
+    .brand_para,
+    .generic_label,
+    .generic_Name,
+    .actual_price_label,
+    .actual_price,
+    .price_para {
+        font-size: 1vw;
+    }
+
+    .alt-card {
+        width: 28%;
+        height: auto;
+    }
+
+    .discount_div {
+        height: auto;
+        padding: 1vw;
+        font-size: 1vw;
+    }
+
+    .review_inner_div {
+        margin-left: 3vw;
+    }
+
+    .faq_main_div {
+        margin: 3vw;
+        gap: 1.5vw;
+    }
+
+    .faq_head_div,
+    .faq_inner_div {
+        padding: 2vw;
+    }
+}
